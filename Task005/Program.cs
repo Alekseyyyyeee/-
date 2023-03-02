@@ -8,6 +8,6 @@ int.TryParse(Console.ReadLine()!, out N);
 int i = -N;
 while(i <= N)
 {
-    Console.WriteLine($"{i} ");
+    Console.Write($"{i} ");
     i = i + 1; 
 }
