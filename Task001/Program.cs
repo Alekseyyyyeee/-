@@ -17,7 +17,7 @@ if (number1 == sqr2)
 {
     Console.WriteLine("Да");
 }
-if (number1 != sqr2)
+else
 {
     Console.WriteLine("Нет");
 }
