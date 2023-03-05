@@ -7,13 +7,17 @@
 
 
 int num;
-Console.Write($"Введите трёхзначное число: ");
+Console.Write($"Введите трёхзначное целое число: ");
 int.TryParse(Console.ReadLine()!, out num);
 
-int result;
-int num2;
-
-num2 = num / 10;
-result = num2 % 10;
+int num2 = num / 10;
+int result = num2 % 10;
+if (num2 < 10 || num2 > 99)
+{
+Console.WriteLine("Некорректное число");
+}
+else
 
 Console.WriteLine(result);
+
+
