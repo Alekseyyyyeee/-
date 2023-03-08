@@ -5,7 +5,14 @@ int N;
 Console.Write("ВВедите N: ");
 int.TryParse(Console.ReadLine()!,out N);
 
-int i = 1; int result;
+int result;
+for (int i = 0; i <= N; i++)
+{
+    result = i * i;
+    Console.Write($"{result} ");
+}
+
+/*int i = 1; int result;
 while (i < N)
 {
     result = i * i;
@@ -13,4 +20,4 @@ while (i < N)
     i++;
 }
 result = N * N;
-Console.Write($"{result} ");
+Console.Write($"{result} "); */
