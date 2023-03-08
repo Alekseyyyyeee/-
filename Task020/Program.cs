@@ -6,7 +6,7 @@ Console.Write("ВВедите N: ");
 int.TryParse(Console.ReadLine()!,out N);
 
 int result;
-for (int i = 0; i <= N; i++)
+for (int i = 1; i <= N; i++)
 {
     result = i * i;
     Console.Write($"{result} ");
