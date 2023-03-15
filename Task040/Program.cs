@@ -3,6 +3,16 @@
 со сторонами такой длины*/
 
 
+
+// С помощью этого можно записать кучу значений сразу, вместо того, что бы вводить их по отдельности
+// как здесь:   Console.Write("Введите число N: ");
+//              int.TryParse(Console.ReadLine()!, out N);
+// array = Console.ReadLine()!.Split(' ', ',').Where(i => int.TryParse(i, out _)).Select(int.Parse).ToArray();
+// массив       считывает      знаки между     int.TryParse проверяет, является   отбирает цифры/числа и
+//                              символами         ли символ числом или цифрой      записывает в массив
+
+
+
 int[] array = FillArray(3);
 
 Console.WriteLine(String.Join(" ", array));
