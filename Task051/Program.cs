@@ -27,3 +27,33 @@ for (int i = 0; i < massive.GetLength(0); i++)
     }
 }
 Console.WriteLine($"{sum}");
+
+int[,] array = FillArray(3, 4);
+PrintArray(array);
+
+int[,] FillArray(int row, int column, int min = 0, int max = 9)
+{
+    int[,] arr = new int[row, column];
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < column; j++)
+        {
+            arr[i, j] = new Random().Next(min, max +1);
+        }
+    }    
+    return arr;
+}
+
+int[,] mass = FillArray(3, 4);
+
+void PrintArray(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write($"{arr[i, j]} ");
+        }
+        Console.WriteLine();
+    }
+}
