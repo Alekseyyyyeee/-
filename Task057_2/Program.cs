@@ -16,7 +16,7 @@ for (int i = 0; i < massive.GetLength(0); i++)
     for (int j = 0; j < massive.GetLength(1); j++)
     {
         massive[i, j] = new Random().Next(10);
-        massive_row[i * massive.GetLength(0) + j] = massive[i, j];
+        massive_row[i * massive.GetLength(1) + j] = massive[i, j];
         Console.Write($"{massive[i, j]} ");
     }
     Console.WriteLine();
