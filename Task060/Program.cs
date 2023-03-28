@@ -10,13 +10,14 @@
 
 
 int[,,] massive = new int[5, 5, 5];         // Мне стало интересно, и я посмотрел на разные размеры массива
+                                            // Вот только неповторяющимися числа не смог сделать, а время поджимает
 for (int i = 0; i < massive.GetLength(0); i++)
 {
     for (int j = 0; j < massive.GetLength(1); j++)
     {
         for (int k = 0; k < massive.GetLength(2); k++)
         {
-            massive[i, j, k] = new Random().Next(10, 100);
+            massive[i, j, k] = new Random().Next(100, 1000);
             Console.Write($"{massive[i, j, k]} ({i}, {j}, {k}) ");
         }
         Console.WriteLine();
